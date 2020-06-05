@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.font-primary {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-secondary {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-pale {
+  opacity: 0.5;
+}
+
+.link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.link:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  z-index: 1;
+}
+
+.link:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #f372d1 0%, #2c13f1 100%);
+  transition: all 0.5s ease;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 2;
+}
+
+.link:hover {
+  color: #1771a5;
+}
+
+.link:hover:before {
+  transform: scaleX(1);
+}
