@@ -3,6 +3,8 @@
 // Colors
 $black: #000000;
 $blue: #1771a5;
+$red: rgb(243, 77, 77);
+$light: #eeeeee;
 
 * {
   margin: 0;
@@ -38,46 +40,4 @@ img {
 
 .text-pale {
   opacity: 0.5;
-}
-
-// Links & Buttons
-.link {
-  position: relative;
-  transition: all 0.3s ease;
-
-  &:after {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: $black;
-    z-index: 1;
-  }
-
-  &:before {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      rgb(243, 114, 209) 0%,
-      rgb(44, 19, 241) 100%
-    );
-    transition: all 0.5s ease;
-    transform-origin: left;
-    transform: scaleX(0);
-    z-index: 2;
-  }
-
-  &:hover {
-    color: $blue;
-    &:before {
-      transform: scaleX(1);
-    }
-  }
 }
