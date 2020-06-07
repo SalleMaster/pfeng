@@ -63,6 +63,57 @@
   }
 }
 
+// Tooltip
+[data-tooltip] {
+  position: relative;
+  border-bottom: 1px dashed #eeeeee;
+
+  &:after {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -100px;
+    padding: 10px 7px;
+    width: 200px;
+    height: auto;
+    color: $blue;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    z-index: 999;
+    text-transform: none;
+    letter-spacing: 0;
+    font-style: italic;
+    background: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+// Arrow
+.down-arrow {
+  position: fixed;
+  display: block;
+  text-align: center;
+  bottom: 10px;
+  left: calc(50% - 12px);
+  transition: all 0.5s ease;
+  color: #d8d8d8;
+
+  &.up {
+    bottom: 20px;
+    transform: rotate(-180deg);
+  }
+}
+
 @keyframes btnAnimation {
   from {
     color: $red;

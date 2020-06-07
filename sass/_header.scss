@@ -122,3 +122,9 @@
     transition: width 3s ease;
   }
 }
+
+@media (min-width: 1640px) {
+  .header-contact {
+    left: -35px;
+  }
+}
