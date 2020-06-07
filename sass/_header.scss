@@ -114,3 +114,11 @@
   transform: rotate(-90deg);
   font-size: 1.3rem;
 }
+
+// Responsive Media Queries
+@media (min-width: 720px) {
+  .header.active {
+    width: 50%;
+    transition: width 3s ease;
+  }
+}
