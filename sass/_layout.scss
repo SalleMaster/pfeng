@@ -10,6 +10,12 @@ $light: #eeeeee;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // cursor: none;
+
+  &::selection {
+    background: none;
+    color: $red;
+  }
 }
 
 html {
@@ -37,6 +43,11 @@ ul {
 
 img {
   width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 30px 0;
 }
 
 // Fonts

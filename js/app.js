@@ -63,3 +63,22 @@ const scrollUp = () => {
 };
 
 arrow.addEventListener('click', scrollUp);
+
+// Cursor
+const cursor = document.querySelector('.cursor');
+
+const cursorAnimExpand = () => {
+  cursor.classList.add('expand');
+
+  setTimeout(() => {
+    cursor.classList.remove('expand');
+  }, 500);
+};
+
+const cursorMove = (e) => {
+  cursor.style.top = window.scrollY + e.clientY + 'px';
+  cursor.style.left = e.clientX + 'px';
+};
+
+// window.addEventListener('click', cursorAnimExpand);
+// window.addEventListener('mousemove', cursorMove);
