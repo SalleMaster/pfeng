@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>Pfeng</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="./about.html" class="link">About</a>
+          </li>
+          <li>
+            <a href="./work.html" class="link">Work</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./" class="header-logo link no-underline-link">P.F.</a>
+      <div class="header-burger">
+        <div class="header-burger-line"></div>
+        <div class="header-burger-line"></div>
+        <div class="header-burger-line"></div>
+      </div>
+      <a href="mailto:hello@pfeng.cc" class="header-contact link">Contact</a>
+    </header>
+
+    <main class="content" id="about">
+      <div class="content-wrapper">
+        <header class="about-header">
+          <div class="header-wrapper">
+            <h1>About</h1>
+            <p class="font-secondary">
+              My name is
+              <span
+                data-tooltip="Pronounced 'Pay'-'ying', like thanks for paying my site a visit!"
+                >Peiying Feng.</span
+              >
+              I'm a Los Angeles-based creative director, digital designer &
+              front-end developer.
+            </p>
+            <p class="font-secondary">
+              I currently work at
+              <a href="#" class="link">Superbolt Agency</a>, where I specialize
+              in helping brands design, build, optimize and grow their online
+              stores.
+            </p>
+            <p class="font-secondary">
+              When I'm not helping brands grow, I'm passionate about data
+              visualization, interactive installations, and bridging the realm
+              of design and technology.
+            </p>
+            <div class="links">
+              <span class="font-secondary">
+                → <a href="#" class="link">LinkedIn</a> &
+                <a href="#" class="link">Instagram</a>
+              </span>
+            </div>
+          </div>
+
+          <img src="./img/profile-pic.jpg" alt="Profile" />
+        </header>
+
+        <div class="line-left"></div>
+
+        <footer class="footer align-center">
+          <p class="text-pale font-secondary">
+            Copyright &copy; Peiying Feng 2020
+          </p>
+        </footer>
+      </div>
+    </main>
+
+    <div class="cursor"></div>
+    <div class="down-arrow">
+      <svg
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      >
+        <path
+          d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+        ></path>
+      </svg>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

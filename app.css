@@ -137,7 +137,7 @@ section {
   color: #5c6f9f;
   content: attr(data-tooltip);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 12px;
   line-height: 1.2;
   z-index: 999;
   text-transform: none;
@@ -221,6 +221,18 @@ section {
   height: 180px;
   width: 1px;
   background: #000000;
+}
+
+.line-left {
+  position: relative;
+  margin-right: auto;
+  height: 180px;
+  width: 1px;
+  background: #000000;
+}
+
+.align-center {
+  text-align: center;
 }
 
 .header {
@@ -307,6 +319,7 @@ section {
 }
 
 .header-burger {
+  cursor: pointer;
   position: relative;
   top: 30px;
   height: 30px;
@@ -512,6 +525,56 @@ section {
   font-size: 0.8rem;
 }
 
+.articles h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.articles .articles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.articles .articles-wrapper .article .article-header {
+  margin-bottom: 1rem;
+}
+
+.articles .articles-wrapper .article .article-header a {
+  font-size: 1rem;
+}
+
+.articles .articles-wrapper .article .article-subheader {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.articles .articles-wrapper .article p {
+  margin: 1rem 0;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.articles .articles-wrapper .article a {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.say-hello h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.say-hello p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 720px) {
   .featured-work .featured-work-wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -544,5 +607,73 @@ section {
   }
   #home .content-wrapper .hero-section .hero-img img {
     display: block;
+  }
+  .articles .articles-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.about-header {
+  margin: 5rem 0;
+  position: relative;
+}
+
+.about-header .header-wrapper h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.about-header .header-wrapper p {
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.about-header .header-wrapper .links {
+  font-weight: 300;
+}
+
+.about-header img {
+  position: absolute;
+  width: 40%;
+  bottom: -100px;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@media (min-width: 720px) {
+  .about-header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 5rem;
+  }
+  .about-header .header-wrapper h1 {
+    font-size: 6rem;
+  }
+  .about-header .header-wrapper p {
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  .about-header .header-wrapper .links {
+    font-weight: 300;
+  }
+  .about-header img {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    margin: auto 0;
+    bottom: 0;
   }
 }

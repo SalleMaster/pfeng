@@ -133,6 +133,64 @@
   }
 }
 
+// Articles
+.articles {
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .articles-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+
+    .article {
+      .article-header {
+        margin-bottom: 1rem;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+
+      .article-subheader {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        font-weight: 300;
+      }
+
+      p {
+        margin: 1rem 0;
+        font-weight: 300;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+      }
+
+      a {
+        margin: 1rem 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// Say Hello
+.say-hello {
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
 // Responsive Media Queries
 @media (min-width: 720px) {
   .featured-work {
@@ -185,6 +243,13 @@
           }
         }
       }
+    }
+  }
+
+  .articles {
+    .articles-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
     }
   }
 }

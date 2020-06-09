@@ -82,7 +82,7 @@
     color: $blue;
     content: attr(data-tooltip);
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 12px;
     line-height: 1.2;
     z-index: 999;
     text-transform: none;
@@ -164,11 +164,23 @@
   }
 }
 
-// Line Center
+// Line
 .line-center {
   position: relative;
   margin: 30px auto;
   height: 180px;
   width: 1px;
   background: #000000;
+}
+
+.line-left {
+  position: relative;
+  margin-right: auto;
+  height: 180px;
+  width: 1px;
+  background: #000000;
+}
+
+.align-center {
+  text-align: center;
 }

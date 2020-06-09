@@ -1,0 +1,63 @@
+// Header
+.about-header {
+  margin: 5rem 0;
+  position: relative;
+
+  .header-wrapper {
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-weight: 300;
+      margin: 1rem 0;
+    }
+
+    .links {
+      font-weight: 300;
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 40%;
+    bottom: -100px;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 720px) {
+  .about-header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 5rem;
+
+    .header-wrapper {
+      h1 {
+        font-size: 6rem;
+      }
+
+      p {
+        font-weight: 300;
+        margin: 1rem 0;
+      }
+
+      .links {
+        font-weight: 300;
+      }
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      opacity: 1;
+      margin: auto 0;
+      bottom: 0;
+    }
+  }
+}
