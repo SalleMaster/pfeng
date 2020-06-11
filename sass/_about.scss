@@ -134,57 +134,14 @@
     padding-left: 3rem;
     padding-right: 3rem;
 
-    .about-section-header {
-      h2 {
-        font-size: 1.9rem;
-        font-weight: 600;
-      }
-    }
-
     .about-section-box {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5rem 2rem;
-
-      .box {
-        .box-header {
-          font-size: 1rem;
-          font-weight: 600;
-          margin-bottom: 1rem;
-        }
-
-        .box-paragraph {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.5;
-        }
-
-        a {
-          img {
-            width: 70px;
-          }
-        }
-      }
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .about-section-paragraphs {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 5rem;
-
-      .paragraph-wrapper {
-        .paragraph-header {
-          font-size: 1rem;
-          font-weight: 600;
-          margin-bottom: 1rem;
-        }
-
-        .paragraph {
-          font-size: 0.9rem;
-          font-weight: 300;
-          line-height: 1.5;
-        }
-      }
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

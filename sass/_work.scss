@@ -1,0 +1,19 @@
+.work-header {
+  .header-wrapper {
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// Responsive Media Queries
+@media (min-width: 720px) {
+  .work-header {
+    .header-wrapper {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
