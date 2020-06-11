@@ -17,7 +17,6 @@ html {
 
 body {
   font-family: 'Playfair Display', serif;
-  height: 2000px;
 }
 
 a {
@@ -653,6 +652,60 @@ section {
   z-index: -1;
 }
 
+.about-section {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.about-section .about-section-header h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.about-section .about-section-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 2rem;
+}
+
+.about-section .about-section-box .box .box-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-section .about-section-box .box .box-paragraph {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.about-section .about-section-box .box a img {
+  width: 70px;
+}
+
+.about-section .about-section-paragraphs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.about-section .about-section-paragraphs .paragraph-wrapper .paragraph-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-section .about-section-paragraphs .paragraph-wrapper .paragraph {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 @media (min-width: 720px) {
   .about-header {
     display: grid;
@@ -675,5 +728,53 @@ section {
     opacity: 1;
     margin: auto 0;
     bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .about-section {
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .about-section .about-section-header h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+  .about-section .about-section-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 2rem;
+  }
+  .about-section .about-section-box .box .box-header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .about-section .about-section-box .box .box-paragraph {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .about-section .about-section-box .box a img {
+    width: 70px;
+  }
+  .about-section .about-section-paragraphs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .about-section .about-section-paragraphs .paragraph-wrapper .paragraph-header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .about-section .about-section-paragraphs .paragraph-wrapper .paragraph {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
   }
 }
